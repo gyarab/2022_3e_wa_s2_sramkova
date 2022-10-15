@@ -1,0 +1,16 @@
+img {
+    width: 500px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 1px solid;
+}
+
+h1{
+    font-size: 100px;
+    color: crimson;
+    
+}
+
+table, th, td{
+    border: 1px solid;
+}
