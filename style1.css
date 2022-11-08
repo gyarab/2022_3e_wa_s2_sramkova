@@ -1,16 +1,31 @@
-img {
-    width: 500px;
-    margin: 100px auto;
-    padding: 20px;
-    border: 1px solid;
+.hero-image{
+    background-image: url(./png1.jpg);
+    height: 200px;
+    width: auto;
+    background-position: center;
+    object-fit: contain;
+    text-align: center;
 }
 
 h1{
     font-size: 100px;
-    color: crimson;
+    color: salmon;
     
 }
 
 table, th, td{
     border: 1px solid;
+}
+
+.navbar a{
+    background-color:azure;
+    margin: 5px 10px 5px 0px;
+    padding: 5px 10px;
+    text-decoration: dotted;
+    
+}
+
+.navbar a:hover{
+    background-color:rgb(75, 139, 139);
+    color: azure;
 }
