@@ -27,7 +27,7 @@ user_amount = float(input("Insert amount: "))
 user_source = input("Insert original curency: ")
 user_target = input("Insert target curency: ")
 
-final_value = user_amount * data[user_source], 3
+final_value = user_amount * data[user_source], 3)
 
 result = round(final_value / data[user_target], 3)
 
