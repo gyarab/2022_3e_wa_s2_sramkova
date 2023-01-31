@@ -13,13 +13,14 @@ data = {} #empty dicionary
 
 for r in rows:
         cols = r.split('|')
-        amt = cols[-3]
         curr = cols[-2]
         rate = cols[-1]        
         rate = rate.replace(",", ".")
-        if amt == 100: #fixing error in list with multiple bills
-                rate = rate / 100   
         rate = float(rate)
+        amt = cols[-3]
+        if amt == 100: #fixing error in list with multiple bills
+            result = rate / 100  
+            rate = result
         data[curr] = rate
 pprint(data)
 
@@ -27,8 +28,8 @@ user_amount = float(input("Insert amount: "))
 user_source = input("Insert original curency: ")
 user_target = input("Insert target curency: ")
 
-final_value = user_amount * data[user_source], 3)
-
-result = round(final_value / data[user_target], 3)
+source = data[user_source]
+value = user_amount * source
+result = round(value / data[user_target], 3)
 
 print(f"Result is {result} {user_target}.")
